@@ -26,23 +26,23 @@ API RESTful diseñada para gestion de eventos e inscripciones.
 
 bash
 
-# Clonar el repositorio
+### Clonar el repositorio
 
 git clone https://github.com/Gustrack/event-platform-backend.git
 
-# Instalar dependencias
+### Instalar dependencias
 
 npm install
 
-# Configurar variables de entorno
+### Configurar variables de entorno
 
 cp .env.example .env
 
-# Iniciar en modo desarrollo
+### Iniciar en modo desarrollo
 
 npm run dev
 
-# Iniciar en producción
+### Iniciar en producción
 
 npm start
 
