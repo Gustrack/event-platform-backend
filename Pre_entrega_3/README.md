@@ -339,10 +339,10 @@ Para verificar que los usuarios se registran correctamente:
 
 ### Seguridad
 
-✅ Variables de entorno con `.env`
-✅ `.env.example` incluido
-✅ JWT_SECRET en variables de entorno
-✅ Passwords hasheados
+✅ Variables de entorno con `.env`  
+✅ `.env.example` incluido  
+✅ JWT_SECRET en variables de entorno  
+✅ Passwords hasheados  
 ✅ Cookies HTTP Only
 
 ## Recursos adicionales
