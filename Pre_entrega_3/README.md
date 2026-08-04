@@ -166,47 +166,47 @@ Cookie generada: `currentUser` (HTTP Only, SameSite: Lax, Max-Age: 3600s)
 
 ### Prueba 1: Registro de usuario (POST /register)
 
-![Registro de usuario](./screenshots/01-POST_register.jpg)
+![Registro de usuario](./screenshots/01-POST_register.jpg)  
 _Status: 201 Created - Usuario registrado exitosamente_
 
 ### Prueba 2: Login (POST /login)
 
-![Login](./screenshots/02-POST_login.jpg)
+![Login](./screenshots/02-POST_login.jpg)  
 _Status: 200 OK - Login exitoso con cookie generada_
 
 ### Prueba 3: Cookie generada en Thunder Client
 
-![Cookie generada](./screenshots/03-POST_login_cookie.jpg)
+![Cookie generada](./screenshots/03-POST_login_cookie.jpg)  
 _Cookie `currentUser` visible en la pestaña "Cookies" de Thunder Client_
 
 ### Prueba 4: Ruta protegida /current (GET)
 
-![Current con autenticación](./screenshots/04-GET_current.jpg)
+![Current con autenticación](./screenshots/04-GET_current.jpg)  
 _Status: 200 OK - Datos del usuario autenticado_
 
 ### Prueba 5: Logout (POST /logout)
 
-![Logout](./screenshots/05-POST_logout.jpg)
+![Logout](./screenshots/05-POST_logout.jpg)  
 _Status: 200 OK - Sesión cerrada exitosamente_
 
 ### Prueba 6: Ruta protegida sin autenticación
 
-![Current sin autenticación](./screenshots/06-GET_current_sin_cookie.jpg)
+![Current sin autenticación](./screenshots/06-GET_current_sin_cookie.jpg)  
 _Status: 401 Unauthorized - Acceso denegado sin token_
 
 ### Prueba 7: Login con email incorrecto
 
-![Login con email incorrecto](./screenshots/07-POST_invalid_login_email.jpg)
+![Login con email incorrecto](./screenshots/07-POST_invalid_login_email.jpg)  
 _Status: 401 Unauthorized - Credenciales inválidas_
 
 ### Prueba 8: Login con contraseña incorrecta
 
-![Login con contraseña incorrecta](./screenshots/08-POST_invalid_login_password.jpg)
+![Login con contraseña incorrecta](./screenshots/08-POST_invalid_login_password.jpg)  
 _Status: 401 Unauthorized - Credenciales inválidas_
 
 ### Prueba 9: Usuario registrado en MongoDB Atlas
 
-![MongoDB Atlas](./screenshots/09-MongoDB_Atlas.jpg)
+![MongoDB Atlas](./screenshots/09-MongoDB_Atlas.jpg)  
 _Usuario `Ana Pérez` registrado en la colección `users` de MongoDB Atlas_
 
 ## Resumen de pruebas
@@ -366,4 +366,4 @@ Agosto 2026
 
 ## Tag
 
-pre-entrega-3
+[pre-entrega-3](https://github.com/Gustrack/event-platform-backend/releases/tag/pre-entrega-3)
