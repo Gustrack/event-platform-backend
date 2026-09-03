@@ -1,0 +1,6 @@
+[phases.setup];
+nixPkgs = ["nodejs"][phases.install];
+cmds = ["npm install"][phases.build];
+cmds = ["npm run build"][phases.start];
+cmd = "npm start"[build];
+exclude = ["Pre_entregas/**/*", "screenshots/**/*", "*.md", "*.png"];
