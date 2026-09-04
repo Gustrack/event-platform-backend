@@ -36,16 +36,16 @@ Sistema de gestión de mantenimiento industrial. Permite a clientes solicitar se
 ## Arquitectura
 
 src/  
-├── config/ # Configuraciones (DB, Passport, Email)  
-├── models/ # Modelos de Mongoose  
-├── dao/ # Data Access Objects  
-├── repositories/ # Patrón de repositorio  
-├── services/ # Lógica de negocio  
-├── dto/ # Data Transfer Objects  
-├── controllers/ # Controladores  
-├── routes/ # Rutas de la API  
-├── middlewares/ # Middlewares (auth, roles, validación)  
-└── validations/ # Esquemas de validación con Joi
+├── config/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Configuraciones (DB, Passport, Email)  
+├── models/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Modelos de Mongoose  
+├── dao/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Data Access Objects  
+├── repositories/ &nbsp;&nbsp;&nbsp;&nbsp;# Patrón de repositorio  
+├── services/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Lógica de negocio  
+├── dto/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Data Transfer Objects  
+├── controllers/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Controladores  
+├── routes/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Rutas de la API  
+├── middlewares/ &nbsp;&nbsp;# Middlewares (auth, roles, validación)  
+└── validations/ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# Esquemas de validación con Joi
 
 ### Flujo de datos:
 
@@ -410,7 +410,7 @@ npm run dev
 npm start
 ```
 
-## Deploy en Railway
+## Deploy en Railwaygit status
 
 https://railway.app/button.svg
 
