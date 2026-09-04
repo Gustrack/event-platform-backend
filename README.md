@@ -167,10 +167,10 @@ MAIL_FROM=innser.system@gmail.com
 
 1. Registrar usuario (Client)
 
-```http
-POST /api/auth/register
+POST /api/auth/register  
 Content-Type: application/json
 
+```json
 {
   "first_name": "Diego",
   "last_name": "Ropolo",
@@ -179,9 +179,11 @@ Content-Type: application/json
   "role": "client",
   "company": "Sit Mobili"
 }
+```
+
 Response:
 
-json
+```json
 {
   "status": "success",
   "payload": {
@@ -197,17 +199,19 @@ json
 
 2. Iniciar sesión
 
-```http
-POST /api/auth/login
+POST /api/auth/login  
 Content-Type: application/json
 
+```json
 {
   "email": "diego.ropolo@sitmobili.com",
   "password": "Diego123!"
 }
+```
+
 Response:
 
-json
+```json
 {
   "status": "success",
   "message": "Login exitoso",
@@ -225,11 +229,11 @@ Cookie generada: token (httpOnly, 7 días)
 
 3. Crear solicitud de mantenimiento
 
-```http
-POST /api/requests
-Cookie: token=<token>
+POST /api/requests  
+Cookie: token=<token>  
 Content-Type: application/json
 
+```json
 {
   "title": "Falla en sistema de refrigeración",
   "description": "El compresor no enciende y la temperatura sube",
@@ -241,9 +245,11 @@ Content-Type: application/json
   "dateRequired": "2026-09-10T08:00:00Z",
   "estimatedHours": 4
 }
+```
+
 Response:
 
-json
+```json
 {
   "status": "success",
   "payload": {
@@ -257,18 +263,20 @@ json
 
 4. Asignar técnico (Admin)
 
-```http
-POST /api/requests/6a99c123fdee75d3c938c4e1/assign
-Cookie: token=<token_admin>
+POST /api/requests/6a99c123fdee75d3c938c4e1/assign  
+Cookie: token=<token_admin>  
 Content-Type: application/json
 
+```json
 {
   "technicianId": "6a98af1a8cd41a7a2a020243",
   "startDate": "2026-09-05T08:00:00Z"
 }
+```
+
 Response:
 
-json
+```json
 {
   "status": "success",
   "payload": {
@@ -297,12 +305,11 @@ json
 
 5. Listar solicitudes con filtros
 
-```http
-GET /api/requests?status=in_progress&priority=alta&page=1&limit=5
-Cookie: token=<token>
+GET /api/requests?status=in_progress&priority=alta&page=1&limit=5  
+Cookie: token=<'token'>  
 Response:
 
-json
+```json
 {
   "status": "success",
   "data": [
@@ -322,11 +329,11 @@ json
 
 6. Técnico actualiza estado de asignación
 
-```http
-PATCH /api/assignments/6a99d456fdee75d3c938c5f2/status
-Cookie: token=<token_tecnico>
+PATCH /api/assignments/6a99d456fdee75d3c938c5f2/status  
+Cookie: token=<token_tecnico>  
 Content-Type: application/json
 
+```json
 {
   "status": "in_progress",
   "notes": "Comenzando reparación"
@@ -375,23 +382,26 @@ npm run dev
 
 # Iniciar en producción
 npm start
-🚀 Deploy en Railway
-https://railway.app/button.svg
 ```
 
-Variables requeridas en Railway:
-|Variable |Valor|
-|---------|-----|
-|PORT |3000|
-|MONGO_URL |URL de MongoDB Atlas|
-|JWT_SECRET |innser_super_secret_key_2026|
-|JWT_EXPIRES_IN |7d|
-|NODE_ENV |production|
-|MAIL_HOST |smtp.gmail.com|
-|MAIL_PORT |587|
-|MAIL_USER |innser.system@gmail.com|
-|MAIL_PASS |Contraseña de aplicación|
-|MAIL_FROM |innser.system@gmail.com|
+## Deploy en Railway
+
+https://railway.app/button.svg
+
+### Variables requeridas en Railway:
+
+| Variable       | Valor                        |
+| -------------- | ---------------------------- |
+| PORT           | 3000                         |
+| MONGO_URL      | URL de MongoDB Atlas         |
+| JWT_SECRET     | innser_super_secret_key_2026 |
+| JWT_EXPIRES_IN | 7d                           |
+| NODE_ENV       | production                   |
+| MAIL_HOST      | smtp.gmail.com               |
+| MAIL_PORT      | 587                          |
+| MAIL_USER      | innser.system@gmail.com      |
+| MAIL_PASS      | Contraseña de aplicación     |
+| MAIL_FROM      | innser.system@gmail.com      |
 
 ## Autor
 
