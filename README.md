@@ -370,29 +370,29 @@ Administrador:
 
 ## Capturas de Pruebas
 
-![1](./screenshots/1.jpg")  
 _Prueba servidor responde correctamente_
+![1](./screenshots/1.jpg)
 
-![1](./screenshots/2.jpg")  
 _Prueba la ruta de salud_
+![1](./screenshots/2.jpg)
 
-![1](./screenshots/3.jpg")  
 _Prueba registro de usuario_
+![1](./screenshots/3.jpg)
 
-![1](./screenshots/4.jpg")  
 _Prueba login_
+![1](./screenshots/4.jpg)
 
-![1](./screenshots/5.jpg")  
 _Prueba obtener usuario actual_
+![1](./screenshots/5.jpg)
 
-![1](./screenshots/6.jpg")  
 _Prueba logout_
+![1](./screenshots/6.jpg)
 
-![1](./screenshots/7.jpg")  
 _Prueba creacion solicitud como cliente_
+![1](./screenshots/7.jpg)
 
-![1](./screenshots/8.jpg")  
 _Prueba listar solicitudes_
+![1](./screenshots/8.jpg)
 
 ## Comandos Útiles
 
