@@ -50,6 +50,7 @@ src/
 ### Flujo de datos:
 
 Request → Routes → Middlewares → Controller → Service → Repository → DAO → Model → MongoDB
+
 Response ← DTO ← Controller ← Service ← Repository ← DAO ← Model ← MongoDB
 
 ---
@@ -99,27 +100,27 @@ npm run seed
 npm run dev
 ```
 
-# Producción
+## Producción
 
 npm start  
 Variables de Entorno
 env
 
-# Servidor
+## Servidor
 
 PORT=3000
 NODE_ENV=development
 
-# MongoDB
+## MongoDB
 
 MONGO_URL=mongodb+srv://<usuario>:<contraseña>@cluster0.xxxxx.mongodb.net/innser-management
 
-# JWT
+## JWT
 
 JWT_SECRET=innser_super_secret_key_2026
 JWT_EXPIRES_IN=7d
 
-# Email (Nodemailer)
+## Email (Nodemailer)
 
 MAIL_HOST=smtp.gmail.com  
 MAIL_PORT=587  
@@ -376,22 +377,23 @@ npm run dev
 npm start
 🚀 Deploy en Railway
 https://railway.app/button.svg
-
-Variables requeridas en Railway:
-Variable	Valor
-PORT	3000
-MONGO_URL	URL de MongoDB Atlas
-JWT_SECRET	innser_super_secret_key_2026
-JWT_EXPIRES_IN	7d
-NODE_ENV	production
-MAIL_HOST	smtp.gmail.com
-MAIL_PORT	587
-MAIL_USER	innser.system@gmail.com
-MAIL_PASS	Contraseña de aplicación
-MAIL_FROM	innser.system@gmail.com
 ```
 
-### Autor
+Variables requeridas en Railway:
+|Variable |Valor|
+|---------|-----|
+|PORT |3000|
+|MONGO_URL |URL de MongoDB Atlas|
+|JWT_SECRET |innser_super_secret_key_2026|
+|JWT_EXPIRES_IN |7d|
+|NODE_ENV |production|
+|MAIL_HOST |smtp.gmail.com|
+|MAIL_PORT |587|
+|MAIL_USER |innser.system@gmail.com|
+|MAIL_PASS |Contraseña de aplicación|
+|MAIL_FROM |innser.system@gmail.com|
+
+## Autor
 
 Gustavo Atala  
 [GitHub](https://github.com/Gustrack/event-platform-backend)
