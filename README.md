@@ -224,7 +224,7 @@ Response:
     "company": "Sit Mobili"
   }
 }
-Cookie generada: token (httpOnly, 7 días)
+//Cookie generada: token (httpOnly, 7 días)
 ```
 
 3. Crear solicitud de mantenimiento
@@ -367,6 +367,32 @@ Administrador:
 | Asignación de técnico | Técnico      | Nueva Asignación de Servicio |
 | Asignación de técnico | Cliente      | Actualización de Estado      |
 | Cambio de estado      | Cliente      | Actualización de Estado      |
+
+## Capturas de Pruebas
+
+![1](./screenshots/1.jpg")  
+_Prueba servidor responde correctamente_
+
+![1](./screenshots/2.jpg")  
+_Prueba la ruta de salud_
+
+![1](./screenshots/3.jpg")  
+_Prueba registro de usuario_
+
+![1](./screenshots/4.jpg")  
+_Prueba login_
+
+![1](./screenshots/5.jpg")  
+_Prueba obtener usuario actual_
+
+![1](./screenshots/6.jpg")  
+_Prueba logout_
+
+![1](./screenshots/7.jpg")  
+_Prueba creacion solicitud como cliente_
+
+![1](./screenshots/8.jpg")  
+_Prueba listar solicitudes_
 
 ## Comandos Útiles
 
